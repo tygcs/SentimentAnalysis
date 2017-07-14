@@ -132,4 +132,6 @@ def test():
 
 
 if __name__ == '__main__':
+    s = time.time()
     test_hotel_comments()
+    print "all time: ", s - time.time()

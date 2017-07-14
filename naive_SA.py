@@ -21,11 +21,11 @@ def test_result():
     # test text files
 
     pos_true = 0
-    pos_all = 1000
+    pos_all = 2000
     neg_true = 0
-    neg_all = 1000
+    neg_all = 2000
 
-    for i in range(1000):
+    for i in range(2000):
         try:
             text = read_hotel_cmts("pos", i)
             score = get_score(text, pos_words, neg_words, judge_words, double_judge_words, degree_words)
@@ -34,7 +34,7 @@ def test_result():
         except:
             pos_all -= 1
 
-    for i in range(1000):
+    for i in range(2000):
         try:
             text = read_hotel_cmts("neg", i)
             score = get_score(text, pos_words, neg_words, judge_words, double_judge_words, degree_words)
